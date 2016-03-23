@@ -2,6 +2,7 @@ package com.example.user.peta;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -17,6 +18,8 @@ public class PetaActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peta);
         setUpMapIfNeeded();
+
+        Toast.makeText(getApplicationContext(), "Can you read this text?", Toast.LENGTH_SHORT).show();
     }
 
     @Override
